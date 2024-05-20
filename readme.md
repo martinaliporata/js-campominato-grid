@@ -6,6 +6,6 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 Creo una const per chiamare con query selector la grid nel DOM e un query selector per selezionare il bottone.
 
-Con un ciclo for, creo le celle della griglia; creo un elemento article (che sarà la griglia) e il contenuto (il numero) indicandolo con che sarà uno span.
+Con un ciclo for, creo le celle della griglia; creo un elemento article (che sarà la griglia) e il contenuto (il numero) che sarà in uno span.
 
 Creiamo un event listener per cui se l'indice è pari, allora la cella si colorerà di azzuro; se inevce è dispari, allora la cella si colorerà di rosso.

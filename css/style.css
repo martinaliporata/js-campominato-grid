@@ -1,0 +1,77 @@
+body {
+    font-size: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+#play-button {
+    text-transform: uppercase;
+}
+section#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+section#grid,
+section#grid article.square {
+    border: 2px solid white;
+}
+
+section#grid > article.square {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+section#grid > article.square.easy{
+    width: calc((100% / 10) - 4px);
+    height: calc((100% / 10) - 4px);
+}
+
+section#grid > article.square.medium{
+    width: calc((100% / 9) - 4px);
+    height: calc((100% / 9) - 4px);
+}
+
+section#grid > article.square.hard{
+    width: calc((100% / 7) - 4px);
+    height: calc((100% / 7) - 4px);
+}
+
+section#grid > article.square.active {
+    background-color: aqua;
+    color: black;
+}
+
+section#grid > article.square.active.odd {
+    background-color: red;
+    color: white;
+}
+
+section#grid > article.square > span.content{
+    display: none;
+}
+
+section#grid > article.square.active > span.content{
+    display: inline;
+}
+
+button, select {
+    padding: 2rem 1rem;
+    background-color: blue;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 1rem;
+}
+
+button:active {
+    background-color: blueviolet;
+}

@@ -1,5 +1,6 @@
 body {
     font-size: 2rem;
+    background-color: yellow;
 }
 
 h1{
@@ -19,11 +20,11 @@ section#grid {
 
 section#grid,
 section#grid article.square {
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 section#grid > article.square {
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
